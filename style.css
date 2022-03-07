@@ -1,0 +1,27 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    background: #F5F5F5;
+    width: 1440px;
+}
+
+header{
+    
+    background: no-repeat url("imagenes/header.png");
+}
+
+main img{
+    border-radius: 184px;
+}
+
+
+
+
+
+form{
+    background: #EAF2FD;
+}
+
+
+footer{
+    background: #ffffff;
+}

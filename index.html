@@ -4,6 +4,10 @@
         <meta charset="UTF-8">
         <title>Jorge Alberto Jurado</title>
         <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -15,12 +19,51 @@
                     <li>Hobbies</li>
                     <li>Formación</li>
                     <li>Proyectos</li>
-                    <li>jorge@albertojurado.com.ar</li>
+                    <li><a href="mailto:jorge@albertojurado.com.ar">jorge@albertojurado.com.ar</a></li>
                 </ul>
             </nav>
         </header>
         <main>
+            <section class="presentacion">
+                <h1>Hola, mi nombre es Jorge Alberto Jurado y construyo paginas web</h1>
+                <p>Soy formado como técnico químico y técnico superior en técnicas digitales (electrónica) y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</p>
 
+                <img src="imagenes/Jorge-Jurado.jpg" alt="Jorge Alberto Jurado" width="368" height="368">
+            </section>
+            <section class="sobremi">
+                <h1>Sobre mi</h1>
+
+            </section>
+            <section class="pasatiemposyhabilidadesblandas">
+                <h1>Skills</h1>
+                <h1>Hobbies</h1>
+            </section>
+            <section class="formacionesyCursos">
+                <h1>Formación academica</h1>
+            </section>
+            <section class="experienciaprofesional">
+
+            </section>
+            <form>
+                <h1>Contacto</h1>
+                <img src="" alt="Contacto">
+                <p>¿Quieres contactarme?</p> 
+                <p>Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+                <label for="nombreapellido">Nombre</label>
+                <input type="text" id="nombreapellido" class="input-padron" required>
+
+                <label for="correoelectronico">E-mail</label>
+                <input type="email" id="correoelectronico" class="input-padron"required placeholder="email@dominio.com">
+                
+                <label for="asunto">Asunto</label>
+                <input type="text" id="asunto" class="input-padron" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-padron"required></textarea>
+
+                <input type="submit" value="Enviar mensaje" class="enviar">
+
+            </form>
         </main>
         <footer>
             <p>Desarrollado por Jorge Alberto Jurado</p>
