@@ -3,15 +3,16 @@ body{
     background: #F5F5F5;
     width: 1440px;
 }
+/*Cabecera*/
 
 header{
-    margin: 0 152px;
-    padding: 32px 0 32px 0;
     align-items: center;
-    justify-content: space-between;
-    display: flex;
     background-size: auto;
-    background: url("imagenes/background.jpg") ;
+    background: url("./imagenes/background.jpg");
+    display: flex;
+    justify-content: space-between;
+    margin: 0 152px;
+    padding: 32px 5px;
 }
 
 header p {
@@ -41,26 +42,27 @@ header nav ul li a#activo {
 header nav ul li a:hover, .presentacion div nav ul li a:hover{
     text-decoration: underline;
 }
+/* Seccion Presentación */
 
 .presentacion{
     display: flex;
     margin: 0 152px 0;
-    
 }
 
 .presentacion div{
-    height: 400px;
-    margin: auto;
+    height: 350px;
+    margin: 5px auto;
 }
 
 .presentacion div h2{
     font-size: 52px;
+    margin: 16px auto;
 }
 
 .presentacion div p, .sobremi__descripcion{
     font-size: 22px;
+    padding: 15px 0;
 }
-
 
 .presentacion div nav ul{
     display: flex;
@@ -72,44 +74,179 @@ header nav ul li a:hover, .presentacion div nav ul li a:hover{
     list-style: none;
 }
 
-
 .presentacion div nav ul li a:after {
     content: "↗";
 }
-
 
 .presentacion img{
     margin: auto 0 ;
     border-radius: 184px;
 }
 
+/*Seccion Sobre Mi*/
+
 .sobremi{
     background: #EAF2FD;
     color: #464646;
-    
 }
+
 .sobremi__contenedor{
     width: 1136px;
-    height: 255px;
+    height: 175px;
     margin: 52px 152px;
 }
 
 .sobremi__titulo {
+    padding-top: 20px;
     font-size: 32px;
     color: #464646;
 }
 
 .sobremi__descripcion {
+    padding-top: 20px;
     font-size: 16px;
     width: 751px;
-    height: 133px;
+    height: 75px;
 }
 
-.skillsyhobbies__titulo, .formacionesyCursos__titulo{
+/*Seccion skills y hobbies*/
+.skillsyhobbies{
+    padding: 20px 0;
+}
+
+
+
+.skillsyhobbies__titulo, .formacionesyCursos__titulo, .profesional__titulo {
     font-size: 32px;
     color: #464646;
     text-align: center;
 }
+
+.skills, .hobbies, .formaciones {
+display: flex;
+margin: 32px 152px
+}
+
+.skill, .hobbie, .formacion {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 16px;
+    align-items: center;
+    height: 150px;
+    width: 15%;
+    border: .2px solid #5d99e7;
+    margin: .5rem;
+    box-shadow: 2px 2px #82b2f1;
+}
+
+.skill__imagen, .hobbie__imagen {
+    width: 100px;
+    height: 100px;
+    margin: 16px;
+}
+
+.skill__imagen--1 {
+    background: url(../imagenes/skills/html5.jpg) center /cover no-repeat;
+}
+
+.skill__imagen--2 {
+    background: url(../imagenes/skills/css3.jpg) center /cover no-repeat;
+}
+
+.skill__imagen--3 {
+    background: url(../imagenes/skills/javascript.jpg) center /cover no-repeat;
+}
+
+.skill__imagen--4 {
+    background: url(../imagenes/skills/nodejs.jpg) center /cover no-repeat;
+}
+
+.skill__imagen--5 {
+    background: url(../imagenes/skills/redes.jpg) center /cover no-repeat;
+}
+
+.skill__imagen--6 {
+    background: url(../imagenes/skills/electronics.png) center /cover no-repeat;
+}
+
+
+.hobbie__imagen--1 {
+    background: url(../imagenes/hobbies/musica.jpg) center /cover no-repeat;
+}
+
+.hobbie__imagen--2 {
+    background: url(../imagenes/hobbies/cocinar.jpg) center  /cover no-repeat;
+}
+
+.hobbie__imagen--3 {
+    background: url(../imagenes/hobbies/Television.jpg) center  /cover no-repeat;
+}
+
+.hobbie__imagen--4 {
+    background: url(../imagenes/hobbies/PC.jpg) center /cover no-repeat;
+}
+
+.hobbie__imagen--5 {
+    background: url(../imagenes/hobbies/electronica.jpg) center /cover no-repeat;
+}
+
+.hobbie__imagen--6 {
+    background: url(../imagenes/hobbies/pesca.gif) center /cover no-repeat;
+}
+
+
+/*Seccion Formaciones*/
+
+.formacionesyCursos{
+    background: #EAF2FD;
+    color: #464646;
+    padding: 20px 0;
+}
+
+.formacion{
+    width: 30%;
+    height: 300px;
+
+}
+
+.formacion__imagen {
+     margin: 16px;
+}
+
+
+.formacion__imagen--1{
+    background: url(../imagenes/formaciones/ISET57.png) center /cover no-repeat;
+    width: 250px;
+    height: 80px;
+
+}
+
+.formacion__imagen--2 {
+    background: url(../imagenes/formaciones/Fundacion\ Libertad.png) center /cover no-repeat;
+    width: 250px;
+    height: 100px;
+}
+
+.formacion__imagen--3 {
+    background: url(../imagenes/formaciones/alura.png) center /cover no-repeat;
+    width: 250px;
+    height: 120px;
+}
+
+/*Seccion Experiencia profesional*/
+
+.profesional {
+    padding: 20px 0;
+}
+
+
+
+/*seccion Contacto*/
 
 .contacto {
     display: flex;
@@ -131,7 +268,7 @@ header nav ul li a:hover, .presentacion div nav ul li a:hover{
     height: 593px;
     left: 0px;
     top: 65.5px;
-    background: url(.jpg), #EDEDED;
+    background: url("./imagenes/telefono.png"), #EDEDED;
 }
 
 .contacto__titulo{
@@ -156,7 +293,6 @@ header nav ul li a:hover, .presentacion div nav ul li a:hover{
     line-height: 19px;
     color: #464646;
 }
-
 
 .contacto__formulario--input-padron{
     background: #ffffff;
@@ -202,7 +338,7 @@ header nav ul li a:hover, .presentacion div nav ul li a:hover{
     font-size: 16px;
     line-height: 19px;
 }
-
+/*Pie de pagina*/
 footer{
     background: #ffffff;
     color: #464646;
