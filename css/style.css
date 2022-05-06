@@ -1,11 +1,12 @@
-body{
+body {
     font-family: 'Raleway', sans-serif;
     background: #F5F5F5;
     width: 1440px;
 }
+
 /*Cabecera*/
 
-header{
+header {
     align-items: center;
     background-size: auto;
     background: url("./imagenes/background.jpg");
@@ -20,15 +21,16 @@ header p {
     font-weight: bold;
 }
 
-header nav ul{
+header nav ul {
     display: flex;
 }
 
-header nav ul li{
+header nav ul li {
     list-style: none;
 }
 
-header nav ul li a, .presentacion div nav ul li a {
+header nav ul li a,
+.presentacion div nav ul li a {
     color: #222222;
     margin-right: 1.25rem;
     text-decoration: none;
@@ -39,37 +41,40 @@ header nav ul li a#activo {
     font-weight: bold;
 }
 
-header nav ul li a:hover, .presentacion div nav ul li a:hover{
+header nav ul li a:hover,
+.presentacion div nav ul li a:hover {
     text-decoration: underline;
 }
+
 /* Seccion Presentación */
 
-.presentacion{
+.presentacion {
     display: flex;
     margin: 0 152px 0;
 }
 
-.presentacion div{
+.presentacion div {
     height: 350px;
     margin: 5px auto;
 }
 
-.presentacion div h2{
+.presentacion div h2 {
     font-size: 52px;
     margin: 16px auto;
 }
 
-.presentacion div p, .sobremi__descripcion{
+.presentacion div p,
+.sobremi__descripcion {
     font-size: 22px;
     padding: 15px 0;
 }
 
-.presentacion div nav ul{
+.presentacion div nav ul {
     display: flex;
     padding-inline-start: 0;
 }
 
-.presentacion div nav ul li{
+.presentacion div nav ul li {
     font-size: 16px;
     list-style: none;
 }
@@ -78,21 +83,21 @@ header nav ul li a:hover, .presentacion div nav ul li a:hover{
     content: "↗";
 }
 
-.presentacion img{
-    margin: auto 0 ;
+.presentacion img {
+    margin: auto 0;
     border-radius: 184px;
 }
 
 /*Seccion Sobre Mi*/
 
-.sobremi{
+.sobremi {
     background: #EAF2FD;
     color: #464646;
 }
 
-.sobremi__contenedor{
+.sobremi__contenedor {
     width: 1136px;
-    height: 175px;
+    height: 300px;
     margin: 52px 152px;
 }
 
@@ -104,30 +109,35 @@ header nav ul li a:hover, .presentacion div nav ul li a:hover{
 
 .sobremi__descripcion {
     padding-top: 20px;
-    font-size: 16px;
+    font-size: 22px;
     width: 751px;
-    height: 75px;
+    height: 1000px;
 }
 
 /*Seccion skills y hobbies*/
-.skillsyhobbies{
+.skillsyhobbies {
     padding: 20px 0;
 }
 
 
-
-.skillsyhobbies__titulo, .formacionesyCursos__titulo, .profesional__titulo {
+.skillsyhobbies__titulo,
+.formacionesyCursos__titulo,
+.profesional__titulo {
     font-size: 32px;
     color: #464646;
     text-align: center;
 }
 
-.skills, .hobbies, .formaciones {
-display: flex;
-margin: 32px 152px
+.skills,
+.hobbies,
+.formaciones {
+    display: flex;
+    margin: 22px 152px
 }
 
-.skill, .hobbie, .formacion {
+.skill,
+.hobbie,
+.formacion {
     background: #ffffff;
     display: flex;
     flex-direction: column;
@@ -141,10 +151,11 @@ margin: 32px 152px
     width: 15%;
     border: .2px solid #5d99e7;
     margin: .5rem;
-    box-shadow: 2px 2px #82b2f1;
+    box-shadow: 3px 3px #82b2f1;
 }
 
-.skill__imagen, .hobbie__imagen {
+.skill__imagen,
+.hobbie__imagen {
     width: 100px;
     height: 100px;
     margin: 16px;
@@ -180,11 +191,11 @@ margin: 32px 152px
 }
 
 .hobbie__imagen--2 {
-    background: url(../imagenes/hobbies/cocinar.jpg) center  /cover no-repeat;
+    background: url(../imagenes/hobbies/cocinar.jpg) center /cover no-repeat;
 }
 
 .hobbie__imagen--3 {
-    background: url(../imagenes/hobbies/Television.jpg) center  /cover no-repeat;
+    background: url(../imagenes/hobbies/Television.jpg) center /cover no-repeat;
 }
 
 .hobbie__imagen--4 {
@@ -202,24 +213,24 @@ margin: 32px 152px
 
 /*Seccion Formaciones*/
 
-.formacionesyCursos{
+.formacionesyCursos {
     background: #EAF2FD;
     color: #464646;
     padding: 20px 0;
 }
 
-.formacion{
+.formacion {
     width: 30%;
     height: 300px;
-
+    background: #EDEDED;
 }
 
 .formacion__imagen {
-     margin: 16px;
+    margin: 16px;
 }
 
 
-.formacion__imagen--1{
+.formacion__imagen--1 {
     background: url(../imagenes/formaciones/ISET57.png) center /cover no-repeat;
     width: 250px;
     height: 80px;
@@ -252,7 +263,7 @@ margin: 32px 152px
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 64px;
+    padding: 30px 64px;
     background: #EAF2FD;
 }
 
@@ -263,15 +274,15 @@ margin: 32px 152px
     padding: 64px 0px 0px;
 }
 
-.contacto__imagen{
+.contacto__imagen {
     width: 464px;
     height: 593px;
     left: 0px;
     top: 65.5px;
-    background: url("./imagenes/telefono.png"), #EDEDED;
+    background: url("../imagenes/telefono.png"), #EDEDED;
 }
 
-.contacto__titulo{
+.contacto__titulo {
     font-size: 32px;
     color: #464646;
     margin-block: 0;
@@ -281,11 +292,11 @@ margin: 32px 152px
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;    
+    padding: 0px;
     margin-left: 16px;
 }
 
-.contacto__formulario-descripcion{
+.contacto__formulario-descripcion {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
@@ -294,7 +305,7 @@ margin: 32px 152px
     color: #464646;
 }
 
-.contacto__formulario--input-padron{
+.contacto__formulario--input-padron {
     background: #ffffff;
     border-radius: 4px;
     margin: 16px 0;
@@ -306,14 +317,15 @@ margin: 32px 152px
     padding: 8px;
 }
 
-.contacto__formulario--input-padron input, textarea{
+.contacto__formulario--input-padron input,
+textarea {
     font-size: 16px;
     border: none;
     font-weight: 400;
     line-height: 20px;
 }
 
-.contacto__formulario--input-padron label{
+.contacto__formulario--input-padron label {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
@@ -324,7 +336,7 @@ margin: 32px 152px
     color: #A2A2A2;
 }
 
-.contacto__formulario--enviar{
+.contacto__formulario--enviar {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -338,14 +350,13 @@ margin: 32px 152px
     font-size: 16px;
     line-height: 19px;
 }
+
 /*Pie de pagina*/
-footer{
+footer {
     background: #ffffff;
     color: #464646;
     text-align: center;
     font-size: 16px;
-    margin: 10px 0 ;
+    margin: 10px 0;
     padding: 32px;
 }
-
-

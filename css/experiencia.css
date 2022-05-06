@@ -1,0 +1,84 @@
+.boton {
+    width: 105px;
+    height: 21px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    color: #ffffff;
+    margin: 0px 10px;
+}
+
+.experienciaProfesional {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.experiencia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0 ;
+
+}
+
+.experiencia__imagen {
+    width: 40%;
+    height: 300px;
+}
+
+.experiencia__imagen:nth-child(1){
+    background: url("../imagenes/Codificador.gif") center /cover no-repeat;
+}
+
+.experiencia__imagen:nth-child(2){
+    background: url("../imagenes/Ahorcado.gif") center /cover no-repeat;
+}
+
+.experiencia__imagen:nth-child(3){
+    background: url("../imagenes/background.jpg") center /cover no-repeat;
+}
+
+.experiencia__contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.experiencia__titulo{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #464646;
+    margin: 8px 10px;
+}
+
+.experiencia__descripcion{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    margin: 8px 10px;
+}
+
+.experiencia__botones {
+    display: flex;
+    flex-direction: row;
+}
+
+.experiencia__repositorio{
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4;
+    text-decoration: none;
+}
+
+.experiencia__demo {
+    background: #2A7AE4;
+    text-decoration: none;
+}
