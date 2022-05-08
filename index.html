@@ -19,10 +19,10 @@
         <nav>
             <ul>
                 <li><a href="#sobremi">Sobre mi</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Hobbies</a></li>
-                <li><a href="#">Formación</a></li>
-                <li><a href="#">Proyectos</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#formacion">Formación</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="mailto:jorge@albertojurado.com.ar">jorge@albertojurado.com.ar</a></li>
             </ul>
         </nav>
@@ -47,7 +47,7 @@
 
 
         </section>
-        <section arialabel="sobremi" class="sobremi">
+        <section id="sobremi" class="sobremi">
             <div class="sobremi__contenedor">
                 <h2 class="sobremi__titulo">Sobre mi</h2>
                 <div class="sobremi__descripcion">
@@ -59,7 +59,7 @@
                 </div>
             </div>
         </section>
-        <section class="skillsyhobbies">
+        <section id="skills" class="skillsyhobbies">
             <h2 class="skillsyhobbies__titulo">Skills</h2>
             <div class="skills">
                 <div class="skill">
@@ -87,7 +87,7 @@
                     <span class="skill__nombre">Electrónica</span>
                 </div>
             </div>
-            <h2 class="skillsyhobbies__titulo">Hobbies</h2>
+            <h2 id="hobbies" class="skillsyhobbies__titulo">Hobbies</h2>
             <div class="hobbies">
                 <div class="hobbie">
                     <div class="hobbie__imagen hobbie__imagen--1"></div>
@@ -115,7 +115,7 @@
                 </div>
             </div>
         </section>
-        <section class="formacionesyCursos">
+        <section id="formacion" class="formacionesyCursos">
             <h2 class="formacionesyCursos__titulo">Formación academica</h2>
             <div class="formaciones">
                 <div class="formacion">
@@ -135,7 +135,7 @@
                 </div>
             </div>
         </section>
-        <section class="experienciaProfesional">
+        <section id="proyectos" class="experienciaProfesional">
             <h2 class="profesional__titulo">Experiencia profesional</h2>
             <div class="experiencia">
                 <img class="experiencia__imagen">
@@ -187,7 +187,7 @@
                     </div>
                     <div class="contacto__formulario--input-padron">
                         <label for="nombreapellido">Nombre</label>
-                        <input type="text" id="nombreapellido" required>
+                        <input type="text" id="nombreapellido" required maxlength="50">
                     </div>
                     <div class="contacto__formulario--input-padron">
                         <label for="correoelectronico">E-mail</label>
@@ -195,11 +195,11 @@
                     </div>
                     <div class="contacto__formulario--input-padron">
                         <label for="asunto">Asunto</label>
-                        <input type="text" id="asunto" required>
+                        <input type="text" id="asunto" required maxlength="50">
                     </div>
                     <div class="contacto__formulario--input-padron">
                         <label for="mensaje">Mensaje</label>
-                        <textarea cols="70" rows="7" id="mensaje" required></textarea>
+                        <textarea cols="70" rows="7" id="mensaje" required maxlength="300"></textarea>
                     </div>
                     <input type="submit" value="Enviar mensaje" class="contacto__formulario--enviar">
                 </form>
